@@ -1,0 +1,384 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    transition: all 1s;
+    box-sizing: border-box;
+}
+.header{ 
+    background-color: #fff159;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+/*para rolar o site todo até chegar na página*/
+html {
+    scroll-behavior: smooth;
+}
+
+.header img{
+    width: 100px;
+}
+
+.headercima{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+
+.headerbaixo{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    align-items: center;
+
+}
+
+   
+.pesquisa input[type="text"] {
+    padding-left: 30px; /* deixe um espaço para o ícone */
+    background-image: url(img/magnifying-glass-solid.svg);
+    background-repeat: no-repeat;
+    background-position: 5px 50%; /* posição do ícone */
+    background-size: 20px 20px; /* tamanho do ícone */
+    border: none; /* remova a borda padrão do input */
+    border-radius: 15px; /* adicione bordas arredondadas */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* adicione uma sombra */
+    width: 300px; /* defina a largura do input */
+    height: 40px; /* defina a altura do input */
+    font-size: 13px; /* defina o tamanho da fonte */
+    color: #333; /* defina a cor do texto */
+}
+
+.ofertas .titulo{
+    background-color: #fff15950;
+}
+
+.flex{
+    background-color: #fff15950;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px;
+    gap: 30px;
+}
+ 
+.titulo{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    background-color: #fff15950;
+}
+
+.fritadeira , .camera, .laptop , .cadeira, .meias{
+    border: 1.8px solid black;
+    border-radius: 20px 0px 20px 20px;
+    padding: 10px;
+    
+}
+
+.verclaro{
+    color: #4DB68A
+}
+
+.verescuro{
+    color: #098f4e;
+    font-weight: bold;
+}
+
+.cinza{
+    color: #383838;
+}
+
+.descontos{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #fff15950;
+    height: calc(100% + 21px);
+}
+.flex2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 0.2px;
+    background-color: #fff15950;
+}
+
+.ofertas img{
+    width: 200px;
+
+}
+.mais{
+    text-align: center;
+    
+    color: #4DB68A;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    background-color: #fff15950;
+    border-radius: 5px;
+    
+}
+
+.footer{
+    background-color: #ffee00;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    padding: 30px;
+    background-image: url(../SenaiLivre/img/rodape.png);
+    background-repeat: no-repeat;
+    background-position: -20vh;
+    font-size: 18px;
+    background-color: #358eed7c;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #fff159;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .30s ease;
+    
+   }
+   
+   button:hover {
+    letter-spacing: 3px;
+    background-color: rgb(231, 67, 67);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(245, 6, 6) 0px 7px 29px 0px;
+   }
+   
+   button:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(245, 6, 6) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 400ms;
+   }
+
+
+
+
+.headerlogin{
+    background-color: #fff159;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+   } 
+.headerlogin img{
+    width: 100px;
+}
+
+#aii {
+    position: relative;
+}
+
+#aii .form-sem-cachorro {
+    z-index: 9;
+    position: relative;
+}
+
+#aii .fundo{
+    background-color: #fff15950;
+    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: calc(100% + 21px);
+    z-index: 5;
+}
+
+main #form #form-texto{
+    text-align: center;
+    padding: 60px;
+    
+    
+}
+main #form #form-formulario form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+main #form #form-formulario form input{
+    /* para o texto ficar por cima do formulário */
+    display: block;
+    padding: 8px;
+    border: none;
+
+    /* para tirar a borda quando clica */
+    outline: none;
+
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    /* para mudar o comprimento do formulário */
+    width: 300px;
+}
+
+.hamblogin{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.headerbaixo :hover,
+.descontos :hover,
+.flex :hover,
+.flex2 :hover{
+ padding: 2px;
+
+}
+
+.mais{
+    background-color: #fff15950;
+
+}
+
+#aiiiv{
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    transition: all .30s ease;
+}
+
+#zedamanga{
+    background-color: #fff15950;
+}
+
+#tomata{
+    background-color: #fff15950;
+}
+
+main .mae{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+
+.filho1{
+    background-color: #1E1E2D;
+    height: 150vh;
+}
+
+.filho1 h6{
+    color: white;
+}
+
+main .mae .filho1 .escrita .painelc{
+    display: flex;
+    padding: 6px;
+}
+
+main .mae .filho1 .escrita .usuario{
+    display: flex;
+    padding: 6px;
+}
+
+main .mae .filho1 .escrita .myconta{
+    display: flex;
+    padding: 6px;
+}
+
+main .mae .filho1 .escrita .segury{
+    display: flex;
+    padding: 6px;
+}
+
+main .mae .filho1 .escrita .corp{
+    display: flex;
+    padding: 6px;
+}
+
+main .mae .filho1 .escrita .esport{
+    display: flex;
+    padding: 6px;
+}
+
+main .mae .filho1 .escrita .academy{
+    display: flex;
+    padding: 6px;
+}
+
+main .mae .filho1 .escrita .relaty{
+    display: flex;
+    padding: 6px;
+}
+
+main .mae .filho1 .escrita .costumy{
+    display: flex;
+    padding: 6px;
+}
+
+main .mae .filho1 .escrita .alerty{
+    display: flex;
+    padding: 6px;
+}
+
+main .mae h6{
+    margin-left: 10px;
+}
+
+.imglogo{
+    margin-left: 35px;
+    margin-top: 30px;
+}
+
+/*-------------------------MEIO DA DASHBOARD--------------------------*/
+
+ main .divfilhos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0px 55px;
+    gap: 20px;
+ }
+
+ .textdash{
+    margin: 35px;
+ }
+
+ .textdash p{
+    margin: 9px;
+    color: dimgray;
+ }
+
+ .mae2 .divfilhos .filho2 .filho3 .filho4 .filho5{
+    border-radius: 30px;
+ }
+
+ .divfilhos{
+    justify-items: center;
+ }
+
+ .filho{
+    border: 4px solid grey;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+ }
+ .filho i{
+    font-size: 3em;
+    position: absolute;
+    top: 20px;
+    right: 5px;
+ }
+
+ .filho h4{
+    margin: 10px;
+ }
+
+ .filho p{
+    margin: 5px;
+ }

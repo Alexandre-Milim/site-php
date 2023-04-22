@@ -1,0 +1,74 @@
+<!doctypehtml>
+    <html lang=pt-br>
+    <meta charset=UTF-8>
+    <meta content="IE=edge" http-equiv=X-UA-Compatible>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css rel=stylesheet
+        crossorigin=anonymous integrity=sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD>
+    <link href="../SENAI LIVRE/styles.css" rel=stylesheet>
+    <title>Senai Livre</title>
+    <main>
+        <div class=mae>
+            <div class=filho1>
+                <figure class=imglogo><img alt=logo src="img/SENAI_São_Paulo_logo 1.png"></figure>
+                <div class=escrita>
+                    <div class=painelc><img alt="" src=img/svg.png>
+                        <h6 class=pc>Painel de controle</h6>
+                    </div>
+                    <div class=usuario><img alt="" src=img/Vector.png>
+                        <h6>Usuários</h6>
+                    </div>
+                    <div class=myconta><img alt="" src="img/Frame (2).png">
+                        <h6>Minha Conta</h6>
+                    </div>
+                    <div class=segury><img alt="" src="img/Frame (3).png">
+                        <h6>Segurança</h6>
+                    </div>
+                    <div class=corp><img alt="" src="img/Frame (4).png">
+                        <h6>Corporativo</h6>
+                    </div>
+                    <div class=esport><img alt="" src="img/Frame (5).png">
+                        <h6>Esportes</h6>
+                    </div>
+                    <div class=academy><img alt="" src="img/Frame (6).png">
+                        <h6>Acadêmico</h6>
+                    </div>
+                    <div class=relaty><img alt="" src="img/Frame (7).png">
+                        <h6>Relatórios</h6>
+                    </div>
+                    <div class=costumy><img alt="" src="img/Frame (8).png">
+                        <h6>Customização</h6>
+                    </div>
+                    <div class=alerty><img alt="" src="img/Frame (9).png">
+                        <h6>Alertas</h6>
+                    </div>
+                </div>
+            </div>
+            <div class=mae2>
+                <div class=textdash>
+                    <h6>E-commerce | Painel de Controle</h6>
+                    <p>Home-
+                </div>
+                <div class=divfilhos>
+                    <div class=filho>
+                        <h6>R$</h6>
+                        <h4>69,700</h4>
+                        <p>Vendas esse mês</p><i class="fa-solid fa-coins"></i>
+                    </div>
+                    <div class=filho>
+                        <h4>345</h4>
+                        <p>Produtos Ativos</p><i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <div class=filho>
+                        <h4>25</h4>
+                        <p>Fornecedores</p><i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <div class=filho>
+                        <h4>4500</h4>
+                        <p>Clientes</p><i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script crossorigin=anonymous src=https://kit.fontawesome.com/a2031308c7.js></script>
