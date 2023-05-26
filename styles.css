@@ -1,13 +1,38 @@
 *{
+    font-family: 'Anton', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
-    transition: all 1s;
     box-sizing: border-box;
+    color: white;
 }
+
+input{
+    color: black;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #000000e8;        /* color of the tracking area */
+  }
+
 .header{ 
-    background-color: #fff159;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+
+    background-color: #000000e8;
+
+}
+.button-spacing {
+    margin-right: 10px;
+}
+.button-borders a {
+
+    padding: 50px;
 }
 
 /*para rolar o site todo até chegar na página*/
@@ -15,8 +40,31 @@ html {
     scroll-behavior: smooth;
 }
 
+#titulo{
+    margin-left: 43px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2,103px);
+
+}
+
+#titulo2{
+    font-size: 43px;
+    color: white;
+}
+
+#btn-sair {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
 .header img{
-    width: 100px;
+    border-radius: 12px;
+    width: 180px;
+    height: 100px;
 }
 
 .headercima{
@@ -24,18 +72,8 @@ html {
     justify-content: space-between;
     padding: 20px;
     align-items: center;
-    border-bottom: 1px solid black;
-    margin-bottom: 10px;
 }
 
-
-.headerbaixo{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 10px;
-    align-items: center;
-
-}
 
    
 .pesquisa input[type="text"] {
@@ -50,15 +88,15 @@ html {
     width: 300px; /* defina a largura do input */
     height: 40px; /* defina a altura do input */
     font-size: 13px; /* defina o tamanho da fonte */
-    color: #333; /* defina a cor do texto */
+    color: #cacaca; /* defina a cor do texto */
 }
 
-.ofertas .titulo{
-    background-color: #fff15950;
+.ofertas .titulo .titulo2{
+    background-color: #000000e8;
 }
 
 .flex{
-    background-color: #fff15950;
+    background-color: #000000e8;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -70,23 +108,16 @@ html {
     text-align: center;
     padding: 20px;
     font-size: 30px;
-    background-color: #fff15950;
+    background-color: #000000e8;
 }
 
 .fritadeira , .camera, .laptop , .cadeira, .meias{
-    border: 1.8px solid black;
-    border-radius: 20px 0px 20px 20px;
     padding: 10px;
     
 }
 
 .verclaro{
     color: #4DB68A
-}
-
-.verescuro{
-    color: #098f4e;
-    font-weight: bold;
 }
 
 .cinza{
@@ -97,7 +128,7 @@ html {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    background-color: #fff15950;
+    background-color: #000000e8;
     height: calc(100% + 21px);
 }
 .flex2{
@@ -106,12 +137,12 @@ html {
     justify-content: space-evenly;
     padding: 10px;
     gap: 0.2px;
-    background-color: #fff15950;
+    background-color: #000000e8;
 }
 
 .ofertas img{
     width: 200px;
-
+    height: 150px;
 }
 .mais{
     text-align: center;
@@ -120,13 +151,13 @@ html {
     font-weight: bold;
     font-size: 14px;
     padding: 10px;
-    background-color: #fff15950;
+    background-color: #000000e8;
     border-radius: 5px;
     
 }
 
 .footer{
-    background-color: #ffee00;
+    background-color: #000000e8;
     display: grid;
     grid-template-columns: 3fr 1fr 1fr;
     padding: 30px;
@@ -134,43 +165,31 @@ html {
     background-repeat: no-repeat;
     background-position: -20vh;
     font-size: 18px;
-    background-color: #358eed7c;
+
 }
 
-button {
-    padding: 10px 15px;
-    border-radius: 50px;
-    border: 0;
-    background-color: #fff159;
-    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    font-size: 15px;
-    transition: all .30s ease;
-    
+.btn {
+    width: 184px;
+    height: 40px;
+    margin: 0.5em;
+    background: rgba(42, 247, 127, 0.74);
+    color: rgba(255, 255, 255, 0.849);
+    border: none;
+    border-radius: 0.625em;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#btn-header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
    }
-   
-   button:hover {
-    letter-spacing: 3px;
-    background-color: rgb(231, 67, 67);
-    color: hsl(0, 0%, 100%);
-    box-shadow: rgb(245, 6, 6) 0px 7px 29px 0px;
-   }
-   
-   button:active {
-    letter-spacing: 3px;
-    background-color: hsl(261deg 80% 48%);
-    color: hsl(0, 0%, 100%);
-    box-shadow: rgb(245, 6, 6) 0px 0px 0px 0px;
-    transform: translateY(10px);
-    transition: 400ms;
-   }
-
-
-
-
 .headerlogin{
-    background-color: #fff159;
+    background-color: #000000e8;
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -190,13 +209,13 @@ button {
 }
 
 #aii .fundo{
-    background-color: #fff15950;
+    background-color: #000000e8;
     
     position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
-    height: calc(100% + 21px);
+    height: calc(100% + 0px);
     z-index: 5;
 }
 
@@ -237,30 +256,21 @@ main #form #form-formulario form input{
 
 }
 
-.headerbaixo :hover,
-.descontos :hover,
-.flex :hover,
-.flex2 :hover{
- padding: 2px;
-
-}
-
 .mais{
-    background-color: #fff15950;
+    background-color: #000000e8;
 
 }
 
 #aiiiv{
     box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
-    transition: all .30s ease;
 }
 
 #zedamanga{
-    background-color: #fff15950;
+    background-color: #000000e8;
 }
 
 #tomata{
-    background-color: #fff15950;
+    background-color: #000000e8;
 }
 
 main .mae{
@@ -382,3 +392,26 @@ main .mae h6{
  .filho p{
     margin: 5px;
  }
+ .input {
+
+    width: 310px;
+    background-color: #8a8a8a14;
+    color: #242424;
+    padding: .15rem .5rem;
+    min-height: 40px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+  }
+  
+  input:focus {
+    border-bottom: 2px solid #323235;
+    border-radius: 4px 4px 2px 2px;
+  }
+  
+  input:hover {
+    outline: 1px solid lightgrey;
+  }
+
