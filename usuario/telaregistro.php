@@ -1,30 +1,25 @@
 <?php
-include("../conexao.php");
+    include("../config/cabecalho.php");
+    include("conexao.php");
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $telefone = $_POST['telefone'];
-    $cidade = $_POST['cidade'];
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
 
-    if (!empty($nome) && !empty($email) && !empty($telefone) && !empty($cidade)) {
-        $sql = "INSERT INTO usuario (nome, email, telefone, cidade) VALUES (:nome, :email, :telefone, :cidade)";
+        $sql = "INSERT INTO usuario (nome, email) VALUES (:nome, :email)";
         $stmt = $conexao->prepare($sql);
         $stmt->bindValue(':nome', $nome);
         $stmt->bindValue(':email', $email);
-        $stmt->bindValue(':telefone', $telefone);
-        $stmt->bindValue(':cidade', $cidade);
         $stmt->execute();
 
         if ($stmt->rowCount() > 0) {
-            echo "Usuário registrado com sucesso.";
+            echo "Registrado com sucesso";
+            header("Location: Telalistagem.php");
+            exit();
         } else {
-            echo "Falha ao registrar o usuário.";
+            echo "Falha ao registrar usuário";
         }
-    } else {
-        echo "Os campos do formulário não podem estar vazios!";
     }
-}
 ?>
 
 <form action="" method="POST">
@@ -34,12 +29,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <label for="email">Email</label>
     <input type="email" name="email" id="email" placeholder="Informe seu email:" required>
 
-    <label for="telefone">Telefone</label>
-    <input type="text" name="telefone" id="telefone" placeholder="Informe seu telefone:" required>
-
-    <label for="cidade">Cidade</label>
-    <input type="text" name="cidade" id="cidade" placeholder="Informe sua cidade:" required>
-
     <button type="submit">Enviar</button>
     <button type="reset">Limpar</button>
 </form>
+
+<?php
+    include("../config/rodape.php");
+?>
